@@ -25,7 +25,7 @@ const SearchBar = ({ states, searchHandler, hiddenSearch, currState }) => {
     return <></>;
   }
   return (
-    <Tooltip title="Search for a location..." placement="bottom">
+    <Tooltip title="Search for a location..." placement="left">
       <FormControl>
         <StyledAutocomplete
           onChange={(event, value) => {
