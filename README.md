@@ -1,10 +1,10 @@
 <img src="https://github.com/Jimenez0106/corona-tracker-app/blob/master/src/images/README/coronavirus.png" alt="App Logo" width="200" height="200"/>
 
-# SARS-CoV-2 Tracker App with ReactJS
+# SARS-CoV-2 Tracker App with ReactJS :test_tube:
 
 This project is a [ReactJS](https://reactjs.org/) Corona Virus Tracker Application utilizing disease-related statistic APIs provided by [disease.sh](https://disease.sh/docs/). Styling was done with [Material UI](https://mui.com/). This app allows you to search through U.S. states/territories to get the latest COVID-19 statistics for today.
 
-# Live Demo
+# Live Demo :syringe:
 
 [Hosted on Vercel](https://corona-tracker-app-six.vercel.app/)
 
