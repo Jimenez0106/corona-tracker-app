@@ -30,9 +30,9 @@ Use `npm start` to run the application in development mode then visit [ http://l
 
 # Screenshots :camera:
 
-<img src="https://github.com/Jimenez0106/corona-tracker-app/blob/master/src/images/README/screenshot_1.png" alt="Screenshot 1"/>
-<img src="https://github.com/Jimenez0106/corona-tracker-app/blob/master/src/images/README/screenshot_2.png" alt="Screenshot 2"/>
-<img src="https://github.com/Jimenez0106/corona-tracker-app/blob/master/src/images/README/screenshot_3.png" alt="Screenshot 3"/>
+<img src="https://github.com/Jimenez0106/corona-tracker-app/blob/master/src/images/README/Screenshot_1.png" alt="Screenshot 1"/>
+<img src="https://github.com/Jimenez0106/corona-tracker-app/blob/master/src/images/README/Screenshot_2.png" alt="Screenshot 2"/>
+<img src="https://github.com/Jimenez0106/corona-tracker-app/blob/master/src/images/README/Screenshot_3.png" alt="Screenshot 3"/>
 
 # Author :raising_hand_man:
 
