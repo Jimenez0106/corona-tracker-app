@@ -2,7 +2,7 @@
 
 # SARS-CoV-2 Tracker App with ReactJS :test_tube:
 
-This project is a [ReactJS](https://reactjs.org/) Corona Virus Tracker Application utilizing disease-related statistic APIs provided by [disease.sh](https://disease.sh/docs/). Styling was done with [Material UI](https://mui.com/). This app allows you to search through U.S. states/territories to get the latest COVID-19 statistics for today.
+This project is a [ReactJS](https://reactjs.org/) Corona Virus Tracker Application utilizing disease-related statistic APIs provided by [disease.sh](https://disease.sh/docs/). Styling was done with [Material UI](https://mui.com/) and [React-Spring](https://react-spring.io/). This app allows you to search through U.S. states/territories to get the latest COVID-19 statistics for today.
 
 # Live Demo :syringe:
 
