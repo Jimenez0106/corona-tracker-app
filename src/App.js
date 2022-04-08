@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Header from "./components/Header";
+import Header from "./components/Header/Header";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Loading from "./components/Loading";
@@ -14,7 +14,6 @@ const App = () => {
   const [currState, setCurrState] = useState("New York");
   const [currCases, setCurrCases] = useState({});
   const [history, setHistory] = useState("");
-  const [hiddenSearch, setHidden] = useState(false);
   const [vaccinated, setVaccinated] = useState(0);
   const [progress, setProgress] = useState(0);
   const [loading, setLoading] = useState(false);
@@ -79,16 +78,8 @@ const App = () => {
     setCurrState(value);
   };
 
-  //Togglers to hide/unhide components
-  const hiddenOnToggler = () => {
-    setHidden(true);
-  };
-
-  const hiddenOffToggler = () => {
-    setHidden(false);
-  };
-
   return (
+    //Main Page
     <Box
       sx={{
         display: "flex",
@@ -104,9 +95,6 @@ const App = () => {
           currState={currState}
           states={states}
           searchHandler={searchHandler}
-          hiddenSearch={hiddenSearch}
-          hiddenOnToggler={hiddenOnToggler}
-          hiddenOffToggler={hiddenOffToggler}
         />
         {loading ? (
           <Loading progress={progress} />

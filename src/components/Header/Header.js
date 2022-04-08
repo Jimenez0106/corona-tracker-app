@@ -1,21 +1,17 @@
 import React from "react";
 import { Typography, AppBar, Toolbar, Button, Stack } from "@mui/material";
-import { createTheme } from "@mui/material/styles";
 import { Link } from "react-router-dom";
 import { Box } from "@mui/system";
-import SearchBar from "./SearchBar";
+import SearchBar from "./SearchBar"
 
 const Header = ({
   states,
   searchHandler,
-  hiddenSearch,
-  hiddenOnToggler,
-  hiddenOffToggler,
   currState,
 }) => {
   return (
-    //Desktop Graphs
     <Box>
+      {/* Navbar */}
       <AppBar
         position="fixed"
         sx={{
@@ -26,7 +22,7 @@ const Header = ({
         }}
       >
         <Toolbar>
-          {/* TITLE */}
+          {/* Title */}
           <Typography
             variant="h4"
             component="div"
@@ -40,7 +36,7 @@ const Header = ({
             <Stack spacing={2} direction="row">
               {/* HOME */}
               <Button
-                onClick={hiddenOffToggler}
+
                 variant="outlined"
                 component={Link}
                 to="/"
@@ -60,7 +56,7 @@ const Header = ({
               </Button>
               {/* ABOUT */}
               <Button
-                onClick={hiddenOnToggler}
+
                 variant="outlined"
                 component={Link}
                 to="/about"
@@ -85,7 +81,6 @@ const Header = ({
             currState={currState}
             states={states}
             searchHandler={searchHandler}
-            hiddenSearch={hiddenSearch}
           />
         </Toolbar>
       </AppBar>

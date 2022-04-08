@@ -1,7 +1,14 @@
 import React from "react";
-import { TextField, Autocomplete, FormControl, styled } from "@mui/material";
-import { Tooltip } from "@mui/material";
+import {
+  TextField,
+  Autocomplete,
+  FormControl,
+  styled,
+  Tooltip,
+} from "@mui/material";
+import { useLocation } from "react-router-dom";
 
+//MUI Styling
 const StyledAutocomplete = styled(Autocomplete)({
   "& .MuiInputLabel-outlined:not(.MuiInputLabel-shrink)": {
     transform: "translate(34px, 20px) scale(1);",
@@ -20,11 +27,9 @@ const StyledAutocomplete = styled(Autocomplete)({
   },
 });
 
-const SearchBar = ({ states, searchHandler, hiddenSearch, currState }) => {
-  if (hiddenSearch) {
-    return <></>;
-  }
-  return (
+const SearchBar = ({ states, searchHandler, currState }) => {
+  const pageLocation = useLocation();
+  return pageLocation.pathname === "/" ? (
     <Tooltip title="Search for a location..." placement="left">
       <FormControl>
         <StyledAutocomplete
@@ -48,13 +53,15 @@ const SearchBar = ({ states, searchHandler, hiddenSearch, currState }) => {
               label={currState}
               variant="outlined"
               InputLabelProps={{
-                style: { color: "orange" },
+                style: { color: "#ECA500" },
               }}
             />
           )}
         />
       </FormControl>
     </Tooltip>
+  ) : (
+    <></>
   );
 };
 
