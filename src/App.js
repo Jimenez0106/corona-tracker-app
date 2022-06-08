@@ -5,9 +5,9 @@ import Header from "./components/Header/Header";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Loading from "./components/Loading";
+import { Box } from "@mui/material";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
-import { Box } from "@mui/material";
 
 const App = () => {
   const [states, setStates] = useState([]);
