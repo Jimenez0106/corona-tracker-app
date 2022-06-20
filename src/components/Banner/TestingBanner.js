@@ -60,7 +60,8 @@ const TestingBanner = () => {
       </Box>
       <img
         className="d-none d-lg-flex"
-        width="200"
+        width="200px"
+        height="200px"
         src={swabTest}
         alt="Covid test Logo"
       />

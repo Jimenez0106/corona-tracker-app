@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Button, Typography } from "@mui/material";
 import { Spring, animated, useSpring } from "react-spring";
-import bannerGif from "../../images/syringe.gif";
+import bannerGif from "../../images/syringe.webm";
 
 const VaccinationBanner = ({ vaccinated }) => {
   //React-spring counter animations
@@ -12,7 +12,10 @@ const VaccinationBanner = ({ vaccinated }) => {
   });
   return (
     <>
-      <img className="d-none d-lg-flex" src={bannerGif} alt="Vaccine Gif" />
+      <video className="d-none d-lg-flex" autoPlay>
+        <source src={bannerGif} type="video/webm" alt="Vaccine Animation" />
+      </video>
+
       {/* Banner Text */}
       <Box
         sx={{
