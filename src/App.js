@@ -86,8 +86,6 @@ const App = () => {
         flexDirection: "column",
         width: "100%",
         height: "100%",
-        backgroundImage: `url("https://wallpaperaccess.com/full/13340.jpg")`,
-        backgroundSize: "cover",
       }}
     >
       <Router>

@@ -6,6 +6,8 @@ body {
   margin: 0;
   overflow: auto;
   overflow-x: hidden;
+  background-image: url("https://wallpaperaccess.com/full/13340.jpg");
+  background-size: cover;
 }
 
 html {
