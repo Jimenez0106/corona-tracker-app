@@ -6,7 +6,7 @@ This project is a [ReactJS](https://reactjs.org/) Corona Virus Tracker Applicati
 
 # Live Demo :syringe:
 
-[Hosted on Vercel](https://corona-tracker-app-six.vercel.app/)
+[Hosted on Vercel](https://sarscov2ustracker.vercel.app/)
 
 # Setup :hammer_and_wrench:
 
