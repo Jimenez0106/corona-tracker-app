@@ -21,7 +21,7 @@ const PopulationCard = ({ AnimatedTypography, population, tests }) => {
         title="Population"
         sx={{
           marginBottom: -3,
-          borderTop: "solid green 15px",
+          borderTop: "solid #1a7bdb 15px",
         }}
       />
       <CardContent>

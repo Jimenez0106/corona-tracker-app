@@ -67,8 +67,8 @@ const TotalCasesGraph = ({ history }) => {
           type="monotone"
           dataKey="cases"
           stackId="1"
-          stroke="green"
-          fill="green"
+          stroke="#1a7bdb"
+          fill="#1a7bdb"
         />
       </AreaChart>
     </ResponsiveContainer>
