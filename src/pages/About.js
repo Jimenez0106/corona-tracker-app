@@ -203,8 +203,8 @@ const About = () => {
 
       <Box sx={{ textAlign: "center" }}>
         <Typography variant="subtitle1">
-          **Selected locations may display data from the day before due today's
-          data not yet being uploaded by the territory.
+          **Selected locations may display data from the day prior due to 'today's
+          data' not yet being uploaded by the location.
         </Typography>
         <Typography variant="subtitle2">
           For more information on COVID-19 APIs and other disease-related
