@@ -12,7 +12,7 @@ const VaccinationBanner = ({ vaccinated }) => {
   });
   return (
     <>
-      <video className="d-none d-lg-flex" autoPlay>
+      <video className="d-none d-lg-flex" autoPlay loop>
         <source src={bannerGif} type="video/webm" alt="Vaccine Animation" />
       </video>
 

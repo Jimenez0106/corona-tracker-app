@@ -38,7 +38,7 @@ const About = () => {
           States. The data is sourced from{" "}
           <a href="https://www.worldometers.info/coronavirus/">Worldometers</a>{" "}
           and <a href="https://coronavirus.jhu.edu/">John Hopkins University</a>{" "}
-          which are both every afternoon. By using the search bar on the top,
+          which are both updated every afternoon. By using the search bar on the top,
           users are able to obtain up-to-date information on states and
           territories of the United States.
         </Typography>

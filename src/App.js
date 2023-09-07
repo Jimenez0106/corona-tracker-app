@@ -5,13 +5,14 @@ import Header from "./components/Header/Header";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Loading from "./components/Loading";
-import { Box } from "@mui/material";
+import { Box, Button } from "@mui/material";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 
 const App = () => {
+  const [notify, setNotify] = useState(true);
   const [states, setStates] = useState([]);
-  const [currState, setCurrState] = useState("New York");
+  const [currState, setCurrState] = useState("Texas");
   const [currCases, setCurrCases] = useState({});
   const [history, setHistory] = useState("");
   const [vaccinated, setVaccinated] = useState(0);
@@ -80,40 +81,76 @@ const App = () => {
 
   return (
     //Main Page
-    <Box
-      sx={{
-        display: "flex",
-        flexDirection: "column",
-        width: "100%",
-        height: "100%",
-      }}
-    >
-      <Router>
-        <Header
-          currState={currState}
-          states={states}
-          searchHandler={searchHandler}
-        />
-        {loading ? (
-          <Loading progress={progress} />
-        ) : (
-          <Routes>
-            <Route
-              path="/"
-              element={
-                <Home
-                  currState={currState}
-                  currCases={currCases}
-                  history={history}
-                  vaccinated={vaccinated}
-                />
-              }
-            />
-            <Route path="/about" element={<About />} />
-          </Routes>
-        )}
-      </Router>
-    </Box>
+    notify === true ? (
+      <Box
+        sx={{
+          display: "flex",
+          flexDirection: "column",
+          width: "100%",
+          height: "100vh",
+          color: "white",
+          textAlign: "Center",
+          alignItems: "center",
+          justifyContent: "center",
+          gap: "25px",
+        }}
+      >
+        Due to Covid 19 APIs being no longer updated, only information up to
+        3/27/2023 is available.
+        <Button
+          sx={{
+            fontWeight: "bold",
+            border: "2px solid gray",
+            color: "white",
+            borderRadius: 15,
+            "&:hover": {
+              border: "2px solid white",
+              backgroundColor: "#313131",
+              color: "orange",
+            },
+            maxWidth: "250px",
+          }}
+          onClick={() => setNotify(false)}
+        >
+          I Understand
+        </Button>
+      </Box>
+    ) : (
+      <Box
+        sx={{
+          display: "flex",
+          flexDirection: "column",
+          width: "100%",
+          height: "100%",
+        }}
+      >
+        <Router>
+          <Header
+            currState={currState}
+            states={states}
+            searchHandler={searchHandler}
+          />
+          {loading ? (
+            <Loading progress={progress} />
+          ) : (
+            <Routes>
+              <Route
+                path="/"
+                element={
+                  <Home
+                    currState={currState}
+                    currCases={currCases}
+                    history={history}
+                    vaccinated={vaccinated}
+                  />
+                }
+              />
+              <Route path="/about" element={<About />} />
+            </Routes>
+          )}
+        </Router>
+      </Box>
+    )
   );
 };
 
