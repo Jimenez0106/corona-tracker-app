@@ -80,7 +80,7 @@ const App = () => {
   };
 
   return (
-    //Main Page
+    //Notification Popup
     notify === true ? (
       <Box
         sx={{
@@ -96,7 +96,7 @@ const App = () => {
         }}
       >
         Due to Covid 19 APIs being no longer updated, only information up to
-        3/27/2023 is available.
+        3/23/2023 is available.
         <Button
           sx={{
             fontWeight: "bold",
@@ -117,6 +117,7 @@ const App = () => {
       </Box>
     ) : (
       <Box
+        //MAIN PAGE
         sx={{
           display: "flex",
           flexDirection: "column",
