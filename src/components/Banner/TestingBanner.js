@@ -50,7 +50,7 @@ const TestingBanner = () => {
             color="warning"
             onClick={() => {
               window.open(
-                "https://www.hhs.gov/coronavirus/community-based-testing-sites/index.html"
+                "https://www.cdc.gov/covid/testing/?CDC_AAref_Val=https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/testing.html"
               );
             }}
           >
